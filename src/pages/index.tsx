@@ -52,8 +52,8 @@ export default function Home() {
           Discover the full potential of our APIs and build something amazing
           today.
         </p>
-        <Link href="/docs/getting-started" className="cta-button">
-          Get Started
+        <Link href="/docs/getting-started">
+          <span className="cta-button"> Get Started </span>
         </Link>
         <span></span>
       </section>
