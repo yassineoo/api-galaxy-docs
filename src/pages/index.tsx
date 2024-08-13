@@ -10,7 +10,7 @@ export default function Home() {
         <Link href="/">
           <>
             <img src="/logos/logo-white-bg.svg" width={48} />
-            <a className="brand">Api Galaxy Documentaion</a>
+            <span className="brand">Api Galaxy Documentaion</span>
           </>
         </Link>
         <Navigation />
@@ -52,9 +52,10 @@ export default function Home() {
           Discover the full potential of our APIs and build something amazing
           today.
         </p>
-        <a href="/docs/getting-started" className="cta-button">
+        <Link href="/docs/getting-started" className="cta-button">
           Get Started
-        </a>
+        </Link>
+        <span></span>
       </section>
 
       <style jsx>{`

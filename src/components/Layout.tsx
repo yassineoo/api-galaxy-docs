@@ -34,7 +34,7 @@ export default function Layout({
           <Link href="/">
             <>
               <img src="/logos/logo-white-bg.svg" width={48} />
-              <a className="brand">Api Galaxy Documentaion</a>
+              <span className="brand">Api Galaxy Documentaion</span>
             </>
           </Link>
           <Navigation />
