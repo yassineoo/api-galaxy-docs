@@ -1,16 +1,16 @@
-import Link from 'next/link';
-import { useLanguage } from '../hooks/useLanguage';
+import Link from "next/link";
+import { useLanguage } from "../hooks/useLanguage";
 
 export default function Navigation() {
   const { t, locale, setLocale } = useLanguage();
-  const language = locale === 'en' ? 'pt' : 'en';
+  const language = locale === "en" ? "pt" : "en";
 
   function handleLocaleChange(language: string) {
     if (!window) {
       return;
     }
 
-    localStorage.setItem('lang', language);
+    localStorage.setItem("lang", language);
     setLocale(language);
   }
 
@@ -18,13 +18,11 @@ export default function Navigation() {
     <nav className="navigation">
       <ul>
         <li>
-          <Link href={`/${locale}/intro`}>
-            <a>{t('docs')}</a>
-          </Link>
+          <Link href={`/${locale}/intro`}>{t("docs")}</Link>
         </li>
         <li>
-          <Link href={`/${locale}/${t('about').toLowerCase()}`}>
-            <a>{t('about')}</a>
+          <Link href={`/${locale}/${t("about").toLowerCase()}`}>
+            {t("about")}
           </Link>
         </li>
         <li>

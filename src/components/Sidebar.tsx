@@ -1,7 +1,7 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import NavConfig from '../config/sidebar.yml';
-import { useLanguage } from '../hooks/useLanguage';
+import NavConfig from "../config/sidebar.yml";
+import { useLanguage } from "../hooks/useLanguage";
 
 type MenuLink = {
   label: string;
@@ -17,21 +17,13 @@ export function ItemLink({ label, link, items }: MenuLink) {
   return (
     <>
       <li key={label}>
-        {link ? (
-          <Link href={link}>
-            <a>{label}</a>
-          </Link>
-        ) : (
-          <h4>{label}</h4>
-        )}
+        {link ? <Link href={link}>{label}</Link> : <h4>{label}</h4>}
       </li>
       {items && (
         <ul>
           {items.map((item) => (
             <li key={item.label}>
-              <Link href={`/${locale}/docs/${item.link}`}>
-                <a>{item.label}</a>
-              </Link>
+              <Link href={`/${locale}/docs/${item.link}`}>{item.label}</Link>
             </li>
           ))}
         </ul>
