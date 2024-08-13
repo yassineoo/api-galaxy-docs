@@ -1,11 +1,11 @@
-import { ReactNode } from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
+import { ReactNode } from "react";
+import Head from "next/head";
+import Link from "next/link";
 
-import Sidebar from './Sidebar';
-import Footer from './Footer';
-import Navigation from './Navigation';
-import TableOfContents from './TableOfContents';
+import Sidebar from "./Sidebar";
+import Footer from "./Footer";
+import Navigation from "./Navigation";
+import TableOfContents from "./TableOfContents";
 
 type LayoutProps = {
   className: string;
@@ -27,12 +27,15 @@ export default function Layout({
   return (
     <>
       <Head>
-        <title>Documentation Starter</title>
+        <title>Api Galaxy Documentaion</title>
       </Head>
       <main className={layoutClass}>
         <header className="header">
           <Link href="/">
-            <a className="brand">Documentation Starter</a>
+            <>
+              <img src="/logos/logo-white-bg.svg" width={48} />
+              <a className="brand">Api Galaxy Documentaion</a>
+            </>
           </Link>
           <Navigation />
         </header>

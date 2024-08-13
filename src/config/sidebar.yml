@@ -1,40 +1,62 @@
 sidebar:
   en:
-    - label: 'Home'
-      link: '/'
-  
-    - label: 'Getting started'
-      items:
-        - label: 'Install'
-          link: 'installation'
-        - label: 'First Steps'
-          link: 'first-steps'
-        - label: 'Sidebar links'
-          link: 'sidebar'
+    - label: "Home"
+      link: "/"
 
-    - label: 'Extending'
+    - label: "Getting Started"
       items:
-        - label: 'Appearance'
-          link: 'appearance'
-        - label: 'Components'
-          link: 'components'
+        - label: "Installation"
+          link: "installation"
+        - label: "First Steps"
+          link: "first-steps"
+        - label: "API Marketplace Overview"
+          link: "marketplace-overview"
 
-  pt:
-    - label: 'Início'
-      link: '/'
-    
-    - label: 'Introdução'
+    - label: "API Management"
       items:
-        - label: 'Instalação'
-          link: 'instalacao'
-        - label: 'Primeiros Passos'
-          link: 'primeiros-passos'
-        - label: 'Links laterais'
-          link: 'lateral'
+        - label: "Creating APIs"
+          link: "creating-apis"
+        - label: "Managing APIs"
+          link: "managing-apis"
+        - label: "API Documentation"
+          link: "api-documentation"
 
-    - label: 'Extendendo'
+    - label: "User Guide"
       items:
-        - label: 'Aparência'
-          link: 'aparencia'
-        - label: 'Componentes'
-          link: 'componentes'
+        - label: "Authentication"
+          link: "authentication"
+        - label: "Billing and Subscriptions"
+          link: "billing-subscriptions"
+        - label: "Support"
+          link: "support"
+
+  fr:
+    - label: "Accueil"
+      link: "/"
+
+    - label: "Commencer"
+      items:
+        - label: "Installation"
+          link: "installation"
+        - label: "Premiers Pas"
+          link: "premiers-pas"
+        - label: "Vue d ensemble du marché d API"
+          link: "vue-densemble-marche-api"
+
+    - label: "Gestion d API"
+      items:
+        - label: "Créer des API"
+          link: "creer-apis"
+        - label: "Gérer des API"
+          link: "gerer-apis"
+        - label: "Documentation API"
+          link: "documentation-api"
+
+    - label: "Guide d utilisation"
+      items:
+        - label: "Authentification"
+          link: "authentification"
+        - label: "Facturation et Abonnements"
+          link: "facturation-abonnements"
+        - label: "Support"
+          link: "support"
